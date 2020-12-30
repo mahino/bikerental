@@ -1,0 +1,173 @@
+<hml> 
+    <head> 
+    <title>Mohan A S</title> 
+    <style> 
+        h1 { 
+            color:#009900; 
+            font-size:46px; 
+        } 
+        p { 
+            font-size:17px; 
+            margin-top:-25px; 
+            margin-left:30px; 
+        } 
+		table, th{ 
+            border: 1px solid black; 
+			background-color: hsl(50, 30%,90%);
+        }
+		
+		td { 
+            padding: 20px; 
+        } 
+		th { 
+            text-align: left;
+        }
+		dd{ 
+            color:rgba(11, 99, 150, 1); 
+            background-color: hsl(250, 45%, 60%); 
+            color: hsl(175, 35%, 87%); 
+        }
+        .geeks { 
+                margin-left:50px; 
+        } 
+
+    </style> 
+    </head> 
+      
+    <body> 
+        <h1><i>Killer <abbr title="Mohan">Mahino</abbr></i></h1> 
+        <p><b><mark><ins><q>Terralogic - Nutanix</ins></mark/></b></p> 
+		<!-killer Mahino->
+		<a href="https://www.hackerrank.com/" > <img title="Hello buddy" src="C:\Users\mohan.as\Pictures\Screenshots\Screenshot (143).png" alt="image is not available" width="200px" height="200px" border=5></a>
+		<iframe src="C:\Users\mohan.as\Downloads\139409.jpg" height="200" width="200"> </iframe>
+    </body> 
+	<body> 
+  
+    <table style="width:25%"> 
+		<caption> Education </caption>
+        <tr> 
+            <th>Studies</th> 
+            <th>College/School</th> 
+            <th>Year</th> 
+        </tr> 
+        <tr> 
+            <td>SSC</td> 
+            <td>Viswa Bharathi</td> 
+            <td>2012</td> 
+        </tr> 
+        <tr> 
+            <td>Intermediate</td> 
+            <td>Vignan</td> 
+            <td>2014</td> 
+        </tr> 
+        <tr> 
+            <td>Btech(ece)</td> 
+            <td>J.N.T.U</td> 
+            <td>2018</td> 
+        </tr> 
+    </table> 
+  
+	</body>
+	<ul style="list-style-type:disc">
+	<dl>
+		<dt>Btech</dt>
+		<dd style="width:19%">66%</dd>
+	</dl>
+	<dl>
+		<dt>Intermediate</dt>
+		<dd style="width:19%">97%</dd>
+	</dl>
+	</ul>
+	</body>
+	<body> 
+<h3>Example of Enabling SpellCheck</h3> 
+    <form> 
+        <p2> 
+            <input type="text" spellcheck="true"> 
+        </p2> 
+        <p2> 
+            <textarea spellcheck="true"></textarea> 
+        </p2> 
+        <button type="reset">Reset</button> 
+    </form> 
+</body> 
+    <body> 
+        <p1>Display location in map</p1> 
+        <button class= "geeks" type="button" onclick="getlocation();"> 
+            Current Position</button> 
+        <div id="demo2" style="width: 300px; height: 300px;"> 
+              
+        </div> 
+        <script src="https://maps.google.com/maps/api/js?sensor=false"> 
+              
+        </script> 
+        <script type="text/javascript"> 
+        function getlocation(){ 
+            if(navigator.geolocation){ 
+                navigator.geolocation.getCurrentPosition(showLoc, errHand); 
+            } 
+        } 
+        function showLoc(pos){ 
+            latt = pos.coords.latitude; 
+            long = pos.coords.longitude; 
+            var lattlong = new google.maps.LatLng(latt, long); 
+            var OPTions = { 
+                center: lattlong, 
+                zoom: 10, 
+                mapTypeControl: true, 
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL} 
+            } 
+            var mapg = new google.maps.Map(document.getElementById("demo2"), OPTions); 
+            var markerg =  
+               new google.maps.Marker({position:lattlong, map:mapg, title:"You are here!"}); 
+        } 
+          
+        function errHand(err) { 
+            switch(err.code) { 
+                case err.PERMISSION_DENIED: 
+                    result.innerHTML = "The application doesn't have the permission"  +  
+                               "to make use of location services" 
+                    break; 
+                case err.POSITION_UNAVAILABLE: 
+                    result.innerHTML = "The location of the device is uncertain" 
+                    break; 
+                case err.TIMEOUT: 
+                    result.innerHTML = "The request to get user location timed out" 
+                    break; 
+                case err.UNKNOWN_ERROR: 
+                    result.innerHTML = "Time to fetch location information exceeded"+ 
+                      "the maximum timeout interval" 
+                    break; 
+            } 
+        } 
+        </script> 
+		<svg width="900" height="600"> 
+			<circle cx="100" cy="450" r="90"
+			stroke="red" stroke-width="10" fill="blue" /> 
+			<rect x="20" y="230" rx="20" ry="20" width="150" height="100"
+			style="fill:orange;stroke:black;stroke-width:4;opacity:1" />
+			<polygon points="100,10 40,198 190,78 10,78 160,198"
+			style="fill:grey;stroke:orange;stroke-width:5;fill-rule:evenodd;" />
+		<defs> 
+			<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"> 
+			<stop offset="0%"
+			style="stop-color:white;stop-opacity:1" /> 
+			<stop offset="100%"
+			style="stop-color:green;stop-opacity:1" /> 
+			</linearGradient> 
+		</defs> 
+		<ellipse cx="400" cy="100" rx="120" ry="80" fill="url(#grad1)" /> 
+			<text fill="#ffffff" font-size="22" font-family="ARIAL"
+			x="335" y="110">Killer_Mahino</text>
+		</svg> 
+		<pre>  
+		<code> 
+#include<stdio.h>  	
+int main() {  
+	printf("Hello Geeks");  
+}  
+		</code>  
+</pre> 
+
+    </body> 
+</hml>   
